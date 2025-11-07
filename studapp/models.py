@@ -13,7 +13,7 @@ class Student(models.Model):
     def __str__(self):
         return f"{self.first_name},{self.roll_no},{self.age},{self.email}"
     
-   '''python manage.py shell
+'''python manage.py shell
  from studapp.models import Student
 >>> Student.objects.create(first_name="Aniket",last_name="Chafekar",roll_no='49',age='21',email="Abc1234@gmail.com",dob='2004-12-02',address="Vaijpur")
     Student.objects.all()
