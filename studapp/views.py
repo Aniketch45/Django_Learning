@@ -7,3 +7,11 @@ def greet(request):
 
 def custom(request):
     return HttpResponse("This is custom Response")
+
+def index(request):
+    context = {'name': 'Aniket'}
+    return render(request,'studapp/index.html', context)
+
+def home(request):
+    context = {'message' : 'Welcome'}
+    return render(request,'studapp/index.html', context)
