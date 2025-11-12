@@ -3,6 +3,7 @@ from studapp import views
 urlpatterns = [
     path('',views.index, name='index'),
     path('home/',views.home, name='home'),
+    path('resume/',views.resume, name='resume'),
     path('studapp/', views.greet, name='greet'),
     path('custom/', views.custom, name='custom'),
 ]

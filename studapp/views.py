@@ -14,4 +14,7 @@ def index(request):
 
 def home(request):
     context = {'message' : 'Welcome'}
-    return render(request,'studapp/index.html', context)
+    return render(request,'studapp/home.html', context)
+
+def resume(request):
+    return render(request,'studapp/resume.html')
