@@ -10,8 +10,8 @@ class Student(models.Model):
     dob = models.DateField()
     address = models.TextField()
 
-    def __str__(self):
-        return f"{self.first_name},{self.roll_no},{self.age},{self.email}"
+    def __str__(self):            #tunder       convert to string
+        return f"{self.first_name},{self.roll_no},{self.age},{self.email}"   
     
 '''python manage.py shell
  from studapp.models import Student
